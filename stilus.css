@@ -1,0 +1,91 @@
+/*Főtest*/
+body{
+    box-sizing: border-box;
+}
+main{
+    width: 80%;
+    max-height: 1000px;
+    margin: auto;
+    background-color: RGB(255,255,230);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "he he he"
+    "as ar ar"
+    "fo fo fo"
+    ;
+    
+}
+header{
+    opacity: 0.8;
+    background-image: url(/kepek/fejlec.jpg);
+    height: 550px;
+    color: red;
+    font-weight: bold;
+    font-family: cursive;
+    padding-top: 60px;
+    text-align: center;
+    grid-area: he;
+}
+article{
+    text-align: justify;
+    font-size: 10px;
+    grid-area: ar;
+}
+aside{
+    grid-area: as;
+}
+
+footer{
+    background-color: red;
+    grid-area: fo;
+}
+/*Mellék test*/
+.kep{
+    text-align: right;
+    border-bottom: 5px ;
+    box-shadow: 5px;
+}
+h2{
+    font-size: 15px;
+    color: #ff1a1a;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: red;
+    list-style-type: none;
+}
+li{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+a:hover{
+color: green;
+
+}
+aside img{
+    width: 100%;
+    border: 3px solid red;
+}
+
+@media only screen and (max-width: 700px) {
+    main{
+        display: grid;
+        grid-template-areas: 
+        "he"
+        "ar"
+        "as"
+        "fo"
+        ;
+        
+    }
+   
+  }
